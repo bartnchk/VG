@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="user_edit" label="Edit user profile">
+
+        <field name="id" type="hidden" />
+
+        <field
+            name="Name"
+            type="text"
+            label="Name"
+            size="30"
+        />
+
+        <field
+            name="username"
+            type="text"
+            label="Username"
+            class="validate-username"
+            size="30"
+            required="true"
+        />
+
+        <field
+            name="password"
+            type="password"
+            label="Password"
+            class="validate-password"
+            size="30"
+        />
+
+        <field
+            name="email"
+            type="email"
+            label="Email"
+            filter="string"
+            size="30"
+        />
+
+        <field
+            name="gender"
+            type="radio"
+            label="Gender"
+            description="ZCOM_USERS_REGISTER_GENDER_DESC"
+            class="btn-group"
+        >
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </field>
+
+        <field
+            name="experience"
+            type="list"
+            label="Experience"
+            description="ZCOM_USERS_REGISTER_EXPERIENCE_DESC"
+        >
+            <option value="beg">Beginner</option>
+            <option value="exp">Experienced</option>
+            <option value="adv">Advanced</option>
+        </field>
+
+        <field
+            name="city_id"
+            type="Cities"
+            label="City"
+            size="30"
+        />
+
+        <field
+            name="secret_question"
+            type="text"
+            label="Secret Question"
+        />
+
+        <field
+            name="secret_answer"
+            type="text"
+            label="Secret Answer"
+        />
+
+        <field
+            name="photo"
+            type="file"
+            label="Photo"
+            description="COM_ZUSERS_REGISTER_PHOTO_DESC"
+        />
+
+        <field
+            name="about_me"
+            type="textarea"
+            cols="6"
+            rows="6"
+            label="About me"
+            description="COM_ZUSERS_REGISTER_ABOUT_ME"
+        />
+
+    </fieldset>
+
+    <fieldset name="user_global" label="Edit user profile">
+
+    </fieldset>
+</form>

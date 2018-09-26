@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="module" version="3.8.0" client="site" method="upgrade">
+
+	<name>Feedback module</name>
+	<author>Zengineers Company</author>
+	<authorEmail>zengineers.company@gmail.com</authorEmail>
+	<creationDate>April 2018</creationDate>
+	<version>1.0</version>
+
+	<files>
+
+		<filename module="mod_feedback">mod_feedback.php</filename>
+		<filename>mod_feedback.xml</filename>
+		<folder>tmpl</folder>
+
+	</files>
+
+</extension>

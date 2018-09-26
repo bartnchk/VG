@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="plant">
+
+        <field name="id" type="hidden" />
+
+        <field name="sort_name"
+               type="text"
+               label="Sort name"
+               class="inputbox"
+               default="" />
+
+        <field name="alias"
+               type="text"
+               label="Alias"
+               class="inputbox"
+               default="" />
+
+        <field name="plant_category_id"
+               type="categoryparent"
+               label="Plant category"
+               class="inputbox"
+               default="" />
+
+        <field name="plant_type_id"
+               type="planttype"
+               label="Plant type"
+               class="inputbox"
+               default="" />
+
+        <field name="description"
+               type="textarea"
+               label="Description" />
+
+        <field name="seeds_photo"
+               type="media"
+               label="Seeds photo"
+               directory="seeds_photo" />
+
+        <field name="barcode_photo"
+               type="media"
+               label="Barcode photo"
+               directory="barcodes_photo" />
+
+        <field name="barcode"
+               type="text"
+               label="Barcode"
+               class="inputbox"
+               default="" />
+
+        <field name="manufactured"
+               type="text"
+               label="Manufactured"
+               class="inputbox"
+               default="" />
+
+        <field name="planting_date"
+               type="calendar"
+               label="Planting date" />
+
+        <field name="sowing_date"
+               type="calendar"
+               label="Sowing date" />
+
+        <field name="preseeding" type="radio" default="0" label="Preseeding" class="btn-group btn-group-yesno">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+
+        <field name="transplantation_date"
+               type="calendar"
+               label="Transplantation date"
+               showon="preseeding:1">
+        </field>
+
+        <field name="purchased"
+               type="number"
+               label="Purchased"
+               class="inputbox"
+               default="" />
+
+        <field name="price"
+               type="number"
+               label="Price"
+               class="inputbox"
+               default="" />
+
+        <field name="rate"
+               type="number"
+               label="Rate"
+               class="inputbox"
+               size="5"
+               default="" />
+
+        <field name="top_plant"
+               type="list"
+               label="Plant Of Day"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="0">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+
+
+
+
+    </fieldset>
+
+    <fieldset name="state">
+
+        <field name="message"
+               type="textarea"
+               label="Message" />
+
+        <field name="published"
+               type="radio"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="btn-group btn-group-yesno"
+               filter="intval"
+               size="1"
+               default="2">
+            <option value="2">Moderation</option>
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+    </fieldset>
+
+</form>

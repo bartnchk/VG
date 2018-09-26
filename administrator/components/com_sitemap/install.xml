@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="component" version="3.8.4" method="upgrade">
+
+	<name>Sitemap</name>
+	<creationDate>02.04.2018</creationDate>
+	<author>Zengineers Company</author>
+	<version>1.0</version>
+
+	<description>Sitemap generator</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">
+				sql/install.mysql.utf8.sql
+			</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">
+				sql/uninstall.mysql.utf8.sql
+			</file>
+		</sql>
+	</uninstall>
+
+
+	<administration>
+
+		<menu link="index.php?option=com_sitemap">Sitemap</menu>
+
+		<files folder="admin">
+
+			<folder>controllers</folder>
+
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>sitemap.php</filename>
+
+		</files>
+
+	</administration>
+
+</extension>

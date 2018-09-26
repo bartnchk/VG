@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Details of catalog item">
+
+		<field name="id" type="hidden" />
+
+		<field name="title"
+				type="text" 
+				label="Название товара"
+				description="Укажите название товара"
+				size="40"
+				class="inputbox"
+				required="true"
+				default="" />
+
+		<field name="title2"
+			   type="text"
+			   label="Подзаголовок"
+			   description="Укажите цвет товара"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+		<field name="alias"
+			   type="text"
+			   label="Алиас"
+			   description="Укажите алиас для товара"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+		<field name="id_category"
+				type="customcategory"
+				label="Категория"
+				required="true"
+				description="Укажите категорию товара"
+				default="" />
+
+		<field name="availability"
+			   type="radio"
+			   default="1"
+			   class="btn-group"
+			   label="Наличие товара"
+				   description="Укажите наличие товара">
+			<option value="1">В наличии</option>
+			<option value="0">Нет в наличии</option>
+		</field>
+
+		<field name="description"
+				type="editor"
+				label="Описание"
+				description="Укажите описание товара"
+				class="inputbox"
+				required="true"
+				default="" />
+
+		<field name="price"
+			   type="text"
+			   label="Цена"
+			   description="Укажите цену товара"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+		<field name="code"
+			   type="text"
+			   label="Код товара"
+			   description="Укажите код товара"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+	    <field name="video"
+			   type="textarea"
+			   filter="raw"
+			   label="Видео"
+			   description="Укажите ссылку на видеоролик"
+			   default="" />
+
+		<field name="discount_type" type="radio" label="Тип скидки" description="Выберите тип скидки" class="btn-group">
+			<option value="0">Нет</option>
+			<option value="price">$</option>
+			<option value="percent">%</option>
+			<option value="type">Акция</option>
+		</field>
+
+
+		<field name="discount_price"
+			   type="text"
+			   label="Скидка $"
+			   description="Укажите величину скидки"
+			   size="40"
+			   class="inputbox"
+			   default=""
+			   showon="discount_type:price" />
+
+	    <field name="discount_percent"
+			   type="text"
+			   label="Скидка %"
+			   description="Укажите величину скидки в процентах"
+			   size="40"
+			   class="inputbox"
+			   showon="discount_type:percent"
+			   default="" />
+
+		<field name="discount_id"
+				type="customcategory2"
+				label="Скидка"
+				description="Выберите скидку"
+				showon="discount_type:type"
+				default="" />
+
+		<field name="option_id"
+			   type="productchar"
+			   description="Выберите характеристику"
+			   label="Доп. характеристика"
+			   default="" />
+
+		<field name="pics"
+			   controller="product"
+			   folder="images/products/"
+			   type="manypics"
+			   label="Картинки"
+			   description="Выберите картинки"
+			   default="" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

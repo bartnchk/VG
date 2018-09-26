@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <fieldset name="plant">
+
+        <field name="id" type="hidden" />
+
+        <field name="sort_name"
+               type="text"
+               class="form-control"
+               hint="Sort name"
+               required="true"
+               default="" />
+
+        <field name="plant_category_id"
+               type="plantcategory"
+               label="Plant category"
+               required="true"
+               class="form-control default-select"
+               default="" />
+
+        <field name="plant_type_id"
+               type="planttype"
+               label="Plant type"
+               required="true"
+               class="form-control default-select"
+               default="" />
+
+        <field name="seeds_photo"
+               type="file"
+               label="COM_PLANTS_SEED_PACKAGE_PHOTO" />
+
+        <field name="barcode_photo"
+               type="file"
+               label="COM_PLANTS_BARCODE_PHOTO" />
+
+        <field name="barcode"
+               type="text"
+               label="COM_PLANTS_BARCODE"
+               class="inputbox"/>
+
+        <field name="photos"
+               type="file"
+               label="COM_PLANTS_PHOTOS"
+               class="input"
+               multiple="true"/>
+
+        <field name="city_id"
+               type="cities"
+               label="City"
+               class="form-control search-city"
+               default="" />
+
+        <field name="manufactured"
+               type="text"
+               label="Manufactured"
+               class="inputbox"
+               default="" />
+
+        <field name="sowing_date"
+               type="calendar"
+               label="Sowing date" />
+
+        <field name="preseeding" type="radio" default="0" label="Preseeding" class="btn-group btn-group-yesno">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+
+        <field name="transplantation_date"
+               type="calendar"
+               label="Transplantation date"
+               showon="preseeding:1">
+        </field>
+
+        <field name="price"
+               type="number"
+               label="Price"
+               class="inputbox"
+               default="" />
+
+        <field name="seeds_in_package" type="radio" default="0" label="Seeds in package" description="" class="btn-group">
+            <option value="0">to less</option>
+            <option value="1">normal</option>
+            <option value="2">many</option>
+        </field>
+
+        <field name="germinability" type="radio" default="0" label="Germinability" description="" class="btn-group">
+            <option value="1"></option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+        </field>
+
+        <field name="yield" type="radio" default="0" label="Yield" description="" class="btn-group">
+            <option value="1"></option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+        </field>
+
+        <field name="easy-care" type="radio" default="0" label="Easy-care" description="" class="btn-group">
+            <option value="1"></option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+        </field>
+
+        <field name="author_recomends" type="radio" default="0" label="Author recommends" description="" class="btn-group">
+            <option value="1"></option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+        </field>
+
+        <field
+            name="description"
+            type="textarea"
+            row="5"
+            label="Description"/>
+
+    </fieldset>
+</form>

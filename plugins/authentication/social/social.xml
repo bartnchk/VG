@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_social</name>
+	<author>Zengineers.Company</author>
+	<creationDate>December 2017</creationDate>
+	<authorEmail>zengineers.company@gmail.com</authorEmail>
+	<authorUrl>http://zengineers.company</authorUrl>
+	<version>1.0.0</version>
+
+	<files>
+		<filename plugin="social">social.php</filename>
+	</files>
+	<config/>
+</extension>

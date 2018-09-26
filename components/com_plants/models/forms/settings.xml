@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+    <fieldset name="default" label="COM_PLANTS_SETTINGS">
+
+        <field
+            name="password1"
+            type="password"
+            autocomplete="off"
+            filter="raw"
+            size="30"
+            class="form-control"
+            maxlength="30"
+        />
+
+        <field
+            name="password2"
+            type="password"
+            autocomplete="off"
+            filter="raw"
+            size="30"
+            class="form-control"
+            maxlength="30"
+        />
+
+        <field
+            name="first_name"
+            type="text"
+            label="COM_ZUSERS_PROFILE_NAME_LABEL"
+            description="COM_ZUSERS_REGISTER_NAME_DESC"
+            maxlength="32"
+            class="form-control"
+            filter="string"
+            size="30"
+        />
+
+        <field
+            name="last_name"
+            type="text"
+            label="COM_ZUSERS_PROFILE_NAME_LABEL"
+            description="COM_ZUSERS_REGISTER_NAME_DESC"
+            maxlength="32"
+            class="form-control"
+            filter="string"
+            size="30"
+        />
+
+        <field
+            name="username"
+            type="text"
+            label="COM_ZUSERS_PROFILE_USERNAME_LABEL"
+            description="COM_ZUSERS_DESIRED_USERNAME"
+            class="validate-username form-control"
+            filter="username"
+            message="COM_USERS_REGISTER_USERNAME_MESSAGE"
+            size="30"
+            validate="username"
+        />
+
+        <field
+            name="secret_question"
+            type="text"
+            class="form-control"
+        />
+
+        <field
+            name="secret_answer"
+            type="text"
+            class="form-control"
+        />
+
+        <field
+            name="email"
+            type="email"
+            label="COM_ZUSERS_PROFILE_EMAIL_LABEL"
+            description="ZCOM_USERS_REGISTER_EMAIL_DESC"
+            field="id"
+            filter="string"
+            message="COM_USERS_REGISTER_EMAIL1_MESSAGE"
+            size="30"
+            unique="true"
+            validate="email"
+            autocomplete="email"
+            class="form-control"
+        />
+
+        <field
+            name="gender"
+            type="radio"
+            label="COM_ZUSERS_PROFILE_GENDER_LABEL"
+            description="ZCOM_USERS_REGISTER_GENDER_DESC"
+            class="btn-group"
+        >
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </field>
+
+        <field
+            name="experience"
+            type="list"
+            label="COM_ZUSERS_PROFILE_EXPERIENCE_LABEL"
+            description="ZCOM_USERS_REGISTER_EXPERIENCE_DESC"
+        >
+            <option value="beg">Beginner</option>
+            <option value="exp">Experienced</option>
+            <option value="adv">Advanced</option>
+        </field>
+
+        <field
+            name="photo"
+            type="file"
+            accept="image/*"
+            label="COM_ZUSERS_REGISTER_PHOTO_LABEL"
+            description="COM_ZUSERS_REGISTER_PHOTO_DESC"
+        />
+
+        <field
+            name="about_me"
+            type="textarea"
+            cols="6"
+            rows="6"
+            label="About me"
+            maxlength="180"
+            description="COM_ZUSERS_REGISTER_ABOUT_ME"
+        />
+
+    </fieldset>
+
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="city">
+
+        <field name="id" type="hidden" />
+
+        <field name="email"
+               type="text"
+               label="emaol"
+               class="inputbox"
+               default="" />
+
+    </fieldset>
+</form>

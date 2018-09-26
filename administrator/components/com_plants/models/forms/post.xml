@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="post">
+
+        <field name="id" type="hidden" />
+
+        <field name="title"
+               type="text"
+               required="true"
+               label="Title"
+               class="inputbox"
+               default="" />
+
+        <field name="photo"
+               required="true"
+               type="media"
+               label="Photo"
+               class="inputbox"
+               directory="posts"
+               default="" />
+
+        <field name="category_id"
+               type="categoryparent"
+               label="Category"
+               class="inputbox"
+               default="" />
+
+        <field name="rating"
+               type="radio"
+               label="Rating"
+               default="0"
+               class="btn-group btn-group-yesno radio">
+            <option value="0">None</option>
+            <option value="1">Better than</option>
+            <option value="2">Worse than</option>
+            <option value="3">Strong</option>
+        </field>
+
+        <field name="germinability"
+               type="list"
+               label="Germinability"
+               class="inputbox"
+               showon="rating:1[OR]rating:2[OR]rating:3"
+        >
+            <option value="0">Select rating:</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </field>
+
+        <field name="yield"
+               type="list"
+               label="Yield"
+               class="inputbox"
+               showon="rating:1[OR]rating:2[OR]rating:3"
+        >
+            <option value="0">Select rating:</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </field>
+
+        <field name="easy_care"
+               type="list"
+               label="Easy-care"
+               class="inputbox"
+               showon="rating:1[OR]rating:2[OR]rating:3"
+        >
+            <option value="0">Select rating:</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </field>
+
+        <field name="author_recommends"
+               type="list"
+               label="Author recommends"
+               class="inputbox"
+               showon="rating:1[OR]rating:2[OR]rating:3"
+        >
+            <option value="0">Select rating:</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </field>
+
+    </fieldset>
+</form>

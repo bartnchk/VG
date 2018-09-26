@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="plantfield">
+
+        <field name="id" type="hidden" />
+
+        <field name="plant_type_id"
+               type="planttype"
+               label="Plant type"
+               class="inputbox"
+               default="" />
+
+        <field name="name"
+               type="text"
+               label="Name"
+               class="inputbox"
+               default="" />
+
+    </fieldset>
+</form>

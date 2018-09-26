@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="user" method="upgrade">
+    <name>User Delete</name>
+    <author>Zengineers Company</author>
+    <creationDate>22.04.18</creationDate>
+    <authorEmail>zengineers.company@gmail.com</authorEmail>
+    <authorUrl>zengineers.company</authorUrl>
+    <version>1.0</version>
+    <description>Delete user dependencies</description>
+    <files>
+        <filename plugin="userDelete">userDelete.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>

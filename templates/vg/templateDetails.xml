@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="3.8.2" type="template" client="site">
+	
+	<name>VG</name>
+	<description>VG template</description>
+	<version>1.0</version>
+	<creationDate>07.12.2017</creationDate>
+	<author>Zengineers Company</author>
+	<authorEmail>zengineers.company@gmail.com</authorEmail>
+	<authorUrl>http://zengineers.company</authorUrl>
+
+	<files>
+		<filename>index.html</filename>	
+		<filename>index.php</filename>	
+		<filename>templateDetails.xml</filename>	
+		<filename>template_thumbnail.png</filename>	
+		<filename>template_preview.png</filename>	
+
+		<folder>img</folder>
+		<folder>style</folder>
+		<folder>js</folder>
+	</files>
+
+	<positions>
+		<position>topmenu</position>
+		<position>footer</position>
+		<position>footermenu</position>
+
+		<position>feedback-form</position>
+	</positions>
+
+</extension>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+
+    <fieldset
+        name="Settings"
+        label="Settings"
+        description="Settings"
+    >
+
+        <field
+            name="id"
+            type="text"
+            label="Facebook ID"
+        />
+
+        <field
+            name="secretkey"
+            type="text"
+            label="Facebook Secretkey"
+        />
+
+        <field
+            type="spacer"
+        />
+
+        <field
+            name="google_id"
+            type="text"
+            label="Google+ ID"
+        />
+
+        <field
+            name="google_auth_secretkey"
+            type="text"
+            label="Google+ Secretkey"
+        />
+
+        <field
+            type="spacer"
+        />
+
+        <field
+            name="mail_chimp_api_key"
+            type="text"
+            label="Mail Chimp API Key"
+        />
+
+        <field
+            name="mail_chimp_template_id"
+            type="text"
+            label="Mail Template ID"
+        />
+
+
+        <field
+            type="spacer"
+        />
+
+        <field
+            name="tinypng_key"
+            type="text"
+            label="Tiny Png API Key"
+        />
+
+
+        <field
+                type="spacer"
+        />
+
+        <field
+            name="site_email"
+            type="text"
+            label="Site Email"
+        />
+
+    </fieldset>
+
+    <fieldset
+        name="Footer"
+        label="Footer"
+    >
+
+        <field
+            name="aboutus"
+            type="textarea"
+            label="About us"
+        />
+
+        <field
+            name="address"
+            type="text"
+            label="Address"
+        />
+
+        <field
+            name="email"
+            type="email"
+            label="Email"
+        />
+
+        <field
+            name="phone"
+            type="phone"
+            label="Phone"
+        />
+
+
+    </fieldset>
+
+    <fieldset name="permissions"
+              label="JCONFIG_PERMISSIONS_LABEL"
+              description="">
+
+        <field name="rules" type="rules"
+               component="com_plants"
+               filter="rules"
+               validate="rules"
+               label="JCONFIG_PERMISSIONS_LABEL"
+               section="component" />
+
+    </fieldset>
+
+</config>

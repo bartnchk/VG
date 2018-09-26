@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="user" method="upgrade">
+    <name>Captcha Checker</name>
+    <author>Zengineers Company</author>
+    <creationDate>19.04.18</creationDate>
+    <authorEmail>zengineers.company@gmail.com</authorEmail>
+    <authorUrl>zengineers.company</authorUrl>
+    <version>1.0</version>
+    <description>Captcha Checker On User Auth</description>
+    <files>
+        <filename plugin="checkCaptcha">checkCaptcha.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>

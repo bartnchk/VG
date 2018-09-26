@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="default" label="COM_ZUSERS_REGISTRATION_DEFAULT_LABEL">
+
+        <field
+            name="email"
+            type="email"
+            label="COM_ZUSERS_REGISTER_EMAIL1_LABEL"
+            description="ZCOM_USERS_REGISTER_EMAIL1_DESC"
+            field="id"
+            filter="string"
+            message="COM_USERS_REGISTER_EMAIL1_MESSAGE"
+            class="form-control-lg w-100"
+            required="true"
+            size="30"
+            unique="true"
+            validate="email"
+            autocomplete="email"
+            hint="Enter email"
+        />
+
+        <field
+            name="password"
+            type="password"
+            label="COM_ZUSERS_REGISTER_PASSWORD_LABEL"
+            autocomplete="off"
+            class="validate-password form-control-lg w-100"
+            filter="raw"
+            size="30"
+            validate="password"
+            required="true"
+            hint="Password"
+        />
+
+        <field
+            name="captcha"
+            type="captcha"
+            label="COM_ZUSERS_CAPTCHA_LABEL"
+            description="COM_USERS_CAPTCHA_DESC"
+            validate="captcha"
+        />
+
+    </fieldset>
+</form>

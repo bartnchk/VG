@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_PLANTS_PLANTS_FILTER_SEARCH_LABEL"
+			description="COM_PLANTS_PLANTS_FILTER_SEARCH_DESC"
+			hint="JSEARCH_FILTER"
+		/>
+
+	</fields>
+	<fields name="list">
+		<field
+				name="fullordering"
+				type="list"
+				label="JGLOBAL_SORT_BY"
+				description="JGLOBAL_SORT_BY"
+				statuses="*,0,1,2,-2"
+				onchange="this.form.submit();"
+				default="a.name ASC"
+		>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="c.created_at ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="c.created_at DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="c.user_id ASC">JSTATUS_ASC</option>
+			<option value="c.user_id DESC">JSTATUS_DESC</option>
+			<option value="c.state ASC">COM_BANNERS_HEADING_NAME_ASC</option>
+			<option value="c.state DESC">COM_BANNERS_HEADING_NAME_DESC</option>
+			<option value="pl.sort_name ASC">JCATEGORY_ASC</option>
+			<option value="pl.sort_name DESC">JCATEGORY_DESC</option>
+		</field>
+		<field
+				name="limit"
+				type="limitbox"
+				label="COM_MENUS_LIST_LIMIT"
+				description="COM_MENUS_LIST_LIMIT_DESC"
+				class="input-mini"
+				default="25"
+				onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

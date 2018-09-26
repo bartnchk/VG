@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="city">
+
+        <field name="id" type="hidden" />
+
+        <field name="name_en"
+               type="text"
+               label="City"
+               class="inputbox"
+               default="" />
+
+        <field name="lat"
+               type="text"
+               label="Lat"
+               class="inputbox"
+               default="" />
+
+        <field name="lon"
+               type="text"
+               label="Lon"
+               class="inputbox"
+               default="" />
+
+        <field name="region_id"
+               type="country"
+               label="Country"
+               class="inputbox"
+               default="" />
+
+    </fieldset>
+</form>

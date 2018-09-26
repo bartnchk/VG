@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="subscribe">
+
+        <field name="id" type="hidden" />
+
+        <field name="email"
+               type="text"
+               label="Subscribe"
+               class="inputbox"
+               default="" />
+
+    </fieldset>
+</form>
